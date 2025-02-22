@@ -19,6 +19,7 @@
 :root {
     --cl-r: #c73a0f;
     --cl-g: #1ea475;
+    --cl-w: #ffffff;
     --cl-rose-A50: #fcf9f7;
     --cl-rose-100: #f4edeb;
     --cl-rose-300: #c9aea6;
@@ -67,14 +68,14 @@ button {
 
 .pl__page {
     min-height: 100vh;
-    background-color: var(--cl-rose-100);
-    padding: 50px 0;
+    background-color: var(--cl-rose-A50);
+    padding: 5em 0;
     position: relative;
 }
 
 .pl__wrap {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -124,9 +125,11 @@ button {
 .pl__item-cart {
     column-gap: 0.5em;
     justify-content: center;
-    background-color: var(--cl-rose-A50);
+    background-color: var(--cl-w);
     color: var(--cl-rose-900);
     font-weight: 600;
+    /* border: 2px solid var(--cl-rose-100); */
+    box-shadow: 0 0 2px 0 var(--cl-rose-500);
 }
 
 .pl__item-ctrl {
@@ -202,7 +205,7 @@ button {
 
 .pl__rcol {
     padding: 2em;
-    background-color: var(--cl-rose-A50);
+    background-color: var(--cl-w);
     border-radius: 10px;
 }
 
@@ -374,7 +377,7 @@ button {
 .pl__card {
     --corner: 10px;
     width: 100%;
-    background-color: var(--cl-rose-A50);
+    background-color: var(--cl-w);
     padding: 2em 1.5em;
     border-top-left-radius: var(--corner);
     border-top-right-radius: var(--corner);
